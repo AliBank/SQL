@@ -1,0 +1,5 @@
+SELECT SUM(T2.[Value $]), T1.FirstName, T1.LastName
+FROM [Employee Table] T1 
+INNER JOIN [Payments Table9] T2 
+ON T1.[Employee ID] = T2.[Employee ID]
+GROUP BY T1.FirstName, T1.LastName
